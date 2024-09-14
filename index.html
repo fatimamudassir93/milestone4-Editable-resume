@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1>Editable Resume Builder By Fatima</h1>
+     <!-- Form to input resume details -->
+     <form id="resumeForm">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="profilePicture">Display Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+            <br>
+            <!-- <label for="profile picture">DISPLAY PICTURE:  <img src="C:\Users\DELL\Desktop\milestone1/img.jpg" width="100" height="100" alt="profile pic"> </img></label> -->
+        <label for="name">Name:    </label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Education: </legend>
+            <label for = "education"> Education</label>
+            <textarea id = "education" name="education" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+        <legend> Work Experience: </legend>
+        <label for = "workExperience">Work Experience </label>
+        <textarea id = "workExperience" name="workExperience" rows="4" required></textarea> <br>
+    </fieldset>
+
+
+<fieldset>
+    <legend>Skills</legend>
+    <label for = "skills"> Skills: </label>
+    <textarea id = "skills" name="skills" rows="4" required></textarea> <br>
+</fieldset>
+
+
+
+
+
+  
+
+<button type="submit"> GENERATE RESUME NOW!!</button>
+
+    </form>
+<div id ="resumeOutput">
+<!--Resume will be generated below-->
+</div>
+<script src ="functionality.js"></script>
+</body>
+</html>
